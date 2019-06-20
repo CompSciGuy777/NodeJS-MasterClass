@@ -102,7 +102,7 @@ let handlers = {}
 //Ping handler
 handlers.ping = (data, callback) => {
     callback(200);
-}
+};
 
 //Not Found
 handlers.notFound = (data, callback) => {
@@ -111,5 +111,5 @@ handlers.notFound = (data, callback) => {
 
 //defining a request router
 const router = {
-    'sample' : handlers.sample
+    'ping' : handlers.ping
 };
