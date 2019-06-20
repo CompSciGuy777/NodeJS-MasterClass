@@ -99,10 +99,10 @@ const unifiedServer = (req, res) => {
 //defining a handler object
 let handlers = {}
 
-//sample handler
-handlers.sample = (data,callback) => {
-    callback(406, {'name' : 'sample handler'});
-};
+//Ping handler
+handlers.ping = (data, callback) => {
+    callback(200);
+}
 
 //Not Found
 handlers.notFound = (data, callback) => {
