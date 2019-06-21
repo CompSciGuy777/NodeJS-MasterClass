@@ -13,8 +13,8 @@ let _data = require('./lib/data');
 
 //TESTING
 //@NOTE delete this
-_data.create('test', 'newfile', {'foo': 'bar'}, (err)=>{
-    console.log("There was the error creating data:", err);
+_data.read('test', 'newfile', (err, data)=>{
+    console.log("There was the error creating data:", err, "and this is the data", data);
 });
 
 
