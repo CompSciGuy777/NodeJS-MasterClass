@@ -9,6 +9,14 @@ const url = require('url');
 const {StringDecoder} = require('string_decoder');
 const config = require('./config');
 const fs = require('fs');
+let _data = require('./lib/data');
+
+//TESTING
+//@NOTE delete this
+_data.create('test', 'newfile', {'foo': 'bar'}, (err)=>{
+    console.log("There was the error creating data:", err);
+});
+
 
 //Instantiating the http server
 const httpServer = http.createServer((req,res) => {
